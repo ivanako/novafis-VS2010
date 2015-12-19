@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DA3E5B9A-1A3A-45C4-A546-F5288F5484B1}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>novafis.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Novafis</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Novafis</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Novafis.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Novafis.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.9.7\Assemblies\v4.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.OleDb" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Objects.vb" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsAccesoBD_MySQL.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDataGrid.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmAnulaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscador.Designer.vb">
+      <DependentUpon>frmBuscador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitasDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracionDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeudas.Designer.vb">
+      <DependentUpon>frmDeudas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeudas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturacion.Designer.vb">
+      <DependentUpon>frmFacturacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFisioterapeutas.Designer.vb">
+      <DependentUpon>frmFisioterapeutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFisioterapeutas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFuentes.Designer.vb">
+      <DependentUpon>frmFuentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFuentes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaNegra.Designer.vb">
+      <DependentUpon>frmListaNegra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaNegra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmObservacionesDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientesDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatologias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatologiasDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTratamiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdiPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="clsDataGrid.resx">
+      <DependentUpon>clsDataGrid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnulaciones.resx">
+      <DependentUpon>frmAnulaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscador.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBuscador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscarPacientes.resx">
+      <DependentUpon>frmBuscarPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCitas.resx">
+      <DependentUpon>frmCitas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCitasDetalle.resx">
+      <DependentUpon>frmCitasDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracionDetalle.resx">
+      <DependentUpon>frmConfiguracionDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeudas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDeudas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFacturacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFisioterapeutas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFisioterapeutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFuentes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmFuentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaNegra.resx">
+      <DependentUpon>frmListaNegra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotas.resx">
+      <DependentUpon>frmNotas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmObservacionesDetalle.resx">
+      <DependentUpon>frmObservacionesDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientesDetalle.resx">
+      <DependentUpon>frmPacientesDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatologias.resx">
+      <DependentUpon>frmPatologias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatologiasDetalle.resx">
+      <DependentUpon>frmPatologiasDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTratamiento.resx">
+      <DependentUpon>frmTratamiento.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mdiPrincipal.resx">
+      <DependentUpon>mdiPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="novafis.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

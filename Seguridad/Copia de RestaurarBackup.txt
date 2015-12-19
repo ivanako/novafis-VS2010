@@ -1,0 +1,11 @@
+Dim objEjecutor
+Dim sComando
+Dim sFicheroSalida
+
+sComando = "cmd /c mysql --user=root --password=katxalote novafis < "
+sFicheroSalida = "C:\Novafis\CopiasSeguridad\Backup_11072006_05056.sql"
+sComando = sComando & sFicheroSalida
+
+Set objEjecutor = WScript.CreateObject("WScript.Shell")
+objEjecutor.Run(sComando)
+Set objEjecutor = Nothing
